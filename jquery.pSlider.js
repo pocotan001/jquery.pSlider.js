@@ -124,18 +124,18 @@
 	$.pSlider = {};
 
 	$.pSlider.defaults = {
-		speed: 250,                    // Number:       アニメーション時のスピード(ミリ秒)
-		distance: 10,                  // Number:       アニメーション時の移動距離(px)
-		interval: 5000,                // Number/false: オートプレイの間隔(ミリ秒), false ならオートプレイ無効
-		pause: true,                   // Boolean:      マウスオーバー時に一時停止するかどうか
-		vertical: false,               // Boolean:      アニメーションを縦方向にするかどうか
-		activeClass: 'active',         // String:       アクティブ状態のページングに付与するcssクラス
-		slidesSelector: '.slides > *', // String:       スライドを示すcssセレクタ
-		pagingSelector: '.paging > *', // String:       ページングを示すcssセレクタ
-		nextSelector: '.next',         // String:       次へを示すcssセレクタ
-		prevSelector: '.prev',         // String:       前へを示すcssセレクタ
-		beforeRotate: false,           // Function:     function(index, isReverse) {}
-		afterRotate: false             // Function:     function(index, isReverse) {}
+		speed: 250,                    // Number:         アニメーション時のスピード(ミリ秒)
+		distance: 10,                  // Number:         アニメーション時の移動距離(px)
+		interval: 5000,                // Number/false:   オートプレイの間隔(ミリ秒), false ならオートプレイ無効
+		pause: true,                   // Boolean:        マウスオーバー時に一時停止するかどうか
+		vertical: false,               // Boolean:        アニメーションを縦方向にするかどうか
+		activeClass: 'active',         // String:         アクティブ状態のページングに付与するcssクラス
+		slidesSelector: '.slides > *', // String:         スライドを示すcssセレクタ
+		pagingSelector: '.paging > *', // String:         ページングを示すcssセレクタ
+		nextSelector: '.next',         // String:         次へを示すcssセレクタ
+		prevSelector: '.prev',         // String:         前へを示すcssセレクタ
+		beforeRotate: false,           // Function/false: function(index, isReverse) {}
+		afterRotate: false             // Function/false: function(index, isReverse) {}
 	};
 
 	$.fn.pSlider = function(options) {
