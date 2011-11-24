@@ -1,8 +1,7 @@
 jquery.pSlider.js
 ======================
-ぽこたんスライダー
 
-使い方
+Usage
 ------
 ### HTML ###
 	<div id="slider">
@@ -26,18 +25,10 @@ jquery.pSlider.js
 	
 	<!-- /#slider --></div>
 
-	<script src="jquery.js"></script>
-	<script src="jquery.pSlider.js"></script>
-	<script>
-	$(function() {
-	  $('#slider').pSlider(/*[options]*/);
-	});
-	</script>
-
 ### CSS ###
 	div#slider ul.slides {
 	  position: relative;
-	  min-height: 120px; /* 確保する高さ */
+	  height: 120px; /* スライドの高さ */
 	}
 	div#slider ul.slides li {
 	  position: absolute;
@@ -48,7 +39,12 @@ jquery.pSlider.js
 	  /* アクティブ状態 */
 	}
 
-オプション
+### JavaScript ###
+	$(function() {
+	  $('#slider').pSlider(/*[options]*/);
+	});
+
+Options
 ----------------
 オプション名|デフォルト値|説明
 ---|---|---|---
@@ -65,6 +61,6 @@ prevSelector|'.prev'|前へを示すcssセレクタ
 beforeRotate|false|スライド前に実行する関数 function(index, isReverse) {}
 afterRotate|false|スライド後に実行する関数 function(index, isReverse) {}
 
-ライセンス
+License
 ----------
 [MIT License](http://www.opensource.org/licenses/mit-license.php)
